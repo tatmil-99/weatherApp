@@ -61,6 +61,18 @@ body {
   font-size: 1em;
 }
 
+.high {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
+.low {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
 .icon-container {
   width: 100px;
   border-radius: 100%;

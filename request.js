@@ -7,10 +7,9 @@ const requestCity = async (city) => {
 
     let response = await fetch(url + query);
     let json = await response.json();
-    // console.log(json);
 
     return json;
-
+    
   } catch(err) {
     alert(err);
   };
