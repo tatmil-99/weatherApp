@@ -23,7 +23,6 @@ const textBlack = () => {
 }
 
 const updateWeather = (city) => {
-  console.log(city);
   const icon = city.weather[0].icon;
   const imgUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 
