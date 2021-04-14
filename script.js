@@ -7,15 +7,25 @@ const feelsLike = document.querySelector(".feels-like");
 const humidity = document.querySelector(".humidity");
 const condition = document.querySelector(".condition");
 const weatherIcon = document.querySelector(".icon-container img");
+const dayOrNight = document.querySelector(".card-top img");
 
 const tempConvert = (kelvin) => {
   const fahrenheit = Math.round((kelvin - 273.15) * 9 / 5 + 32);
   return fahrenheit;
 };
 
+const textWhite = () => {
+  cityName.style.color = "white";
+}
+
+const textBlack = () => {
+  cityName.style.color = "#707070";
+}
+
 const updateWeather = (city) => {
   console.log(city);
-  const imgUrl = `https://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`;
+  const icon = city.weather[0].icon;
+  const imgUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 
   cityName.innerText = city.name;
   temperature.innerText = `${tempConvert(city.main.temp)}°F`;
@@ -25,6 +35,14 @@ const updateWeather = (city) => {
   humidity.innerText = `${city.main.humidity}%`;
   condition.innerText = `${city.weather[0].description}`;
   weatherIcon.src = imgUrl;
+
+  if (icon.includes("d")) {
+    dayOrNight.src = "/img/day_image.svg";
+    textBlack();
+  } else {
+    dayOrNight.src = "/img/night_image.svg";
+    textWhite();
+  };
 };
 
 searchForm.addEventListener("submit", (event) => {
