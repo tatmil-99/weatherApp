@@ -6,6 +6,7 @@ const low = document.querySelector(".low");
 const feelsLike = document.querySelector(".feels-like");
 const humidity = document.querySelector(".humidity");
 const condition = document.querySelector(".condition");
+const weatherIcon = document.querySelector(".icon-container img");
 
 const tempConvert = (kelvin) => {
   const fahrenheit = Math.round((kelvin - 273.15) * 9 / 5 + 32);
@@ -14,6 +15,8 @@ const tempConvert = (kelvin) => {
 
 const updateWeather = (city) => {
   console.log(city);
+  const imgUrl = `https://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`;
+
   cityName.innerText = city.name;
   temperature.innerText = `${tempConvert(city.main.temp)}°F`;
   high.innerText = `Hi ${tempConvert(city.main.temp_max)}°F`;
@@ -21,6 +24,7 @@ const updateWeather = (city) => {
   feelsLike.innerText = `${tempConvert(city.main.feels_like)}°F`;
   humidity.innerText = `${city.main.humidity}%`;
   condition.innerText = `${city.weather[0].description}`;
+  weatherIcon.src = imgUrl;
 };
 
 searchForm.addEventListener("submit", (event) => {
