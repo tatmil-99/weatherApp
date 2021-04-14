@@ -9,7 +9,6 @@ const requestCity = async (city) => {
     let json = await response.json();
 
     return json;
-    
   } catch(err) {
     alert(err);
   };
