@@ -1,7 +1,8 @@
+@settings {
+font-size: 100;
+}
+
 <p align="center">
-  @settings {
-    font-size: 100;
-  }
   The Weather Page
 </p>
 
