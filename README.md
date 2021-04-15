@@ -6,7 +6,7 @@ This is the well known and overdone weather app that... you guessed it... tells 
 
 - HTML
 - CSS
-- Bootsrap 4
+- Bootstrap 4
 - ES6
 - Git
 
