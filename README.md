@@ -7,7 +7,7 @@ This is the well known and overdone weather app that... you guessed it... tells 
 - HTML
 - CSS
 - Bootsrap 4
-- JavaScript es6
+- ES6
 
 <!-- ![Image of my weather app](https://github.com/tatmil-99/weatherApp/blob/main/img/Screen%20Shot%202021-04-15%20at%2010.54.43%20AM.png) -->
 <img src="https://github.com/tatmil-99/weatherApp/blob/main/img/Screen%20Shot%202021-04-15%20at%2010.54.43%20AM.png" width="300" height="550">
