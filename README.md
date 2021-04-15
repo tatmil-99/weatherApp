@@ -13,6 +13,15 @@ This is the well known and overdone weather app that... you guessed it... tells 
 <!-- ![Image of my weather app](https://github.com/tatmil-99/weatherApp/blob/main/img/Screen%20Shot%202021-04-15%20at%2010.54.43%20AM.png) -->
 <img src="https://github.com/tatmil-99/weatherApp/blob/main/img/Screen%20Shot%202021-04-15%20at%2010.54.43%20AM.png" width="300" height="550">
 
+### Acknowledgements
+
+- OpenWeatherMap
+- YouTube
+- SomTea Codes
+- GitHub Pages
+- W3Schools
+- MDN
+
 | Name          | Email              | Twitter  |
 | ------------- | ------------------ | -------- |
 | Tatien Miller | tatmil99@gmail.com | @TatienM |
