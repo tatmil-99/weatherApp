@@ -16,7 +16,6 @@ This is the well known and overdone weather app that... you guessed it... tells 
 ### Acknowledgements
 
 - OpenWeatherMap
-- YouTube
 - SomTea Codes
 - GitHub Pages
 - W3Schools
