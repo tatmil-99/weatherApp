@@ -36,10 +36,10 @@ const updateWeather = (city) => {
   weatherIcon.src = imgUrl;
 
   if (icon.includes("d")) {
-    dayOrNight.src = "/img/day_image.svg";
+    dayOrNight.src = "img/day_image.svg";
     textBlack();
   } else {
-    dayOrNight.src = "/img/night_image.svg";
+    dayOrNight.src = "img/night_image.svg";
     textWhite();
   };
 };
