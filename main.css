@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap");
 
+@media (max-width: 575.98px) {
+  .card-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
